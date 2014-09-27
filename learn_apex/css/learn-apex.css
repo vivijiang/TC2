@@ -1,0 +1,209 @@
+﻿html {
+  font-size: 62.5%;
+  /* 10px */ }
+
+body {
+  color: #666;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; }
+
+.text-emphsize {
+  color: #00aeff; }
+
+a.text-emphsize {
+  text-decoration: none; }
+  a.text-emphsize:active, a.text-emphsize:hover {
+    color: #00aeff; }
+
+h1 {
+  color: #333;
+  font-size: 50px;
+  margin: 45px 0 52px; }
+
+h2 {
+  font-size: 2.8rem; }
+
+p {
+  font-size: 1.6rem; }
+
+small {
+  font-size: 20px; }
+
+.btn {
+  border-width: 0; }
+
+.btn.btn-primary {
+  background: #2EACE7;
+  border-bottom: 4px solid #1877A5;
+  font-size: 20px;
+  padding: 6px 18px; }
+  .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    background-color: #1877A5; }
+
+.form-control {
+  height: 36px;
+  padding: 7px 12px; }
+
+.input-group-addon.submit-wrapper {
+  border-width: 0;
+  padding: 0; }
+
+.submit-wrapper .btn {
+  background-color: #FF9900;
+  border-bottom: 4px solid #FF7A00;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  padding: 6px 28px; }
+
+.submit-wrapper .btn:hover {
+  background-color: #FF7A00; }
+
+.lead {
+  font-size: 2.4rem;
+  padding: 11px 0;
+  line-height: 2.2;
+  margin: 10px 0; }
+
+.lead strong {
+  padding-right: 5px; }
+
+.lead .text-right {
+  font-size: 2.2rem; }
+
+.container-bright {
+  background-color: #DDF3FF;
+  box-shadow: inset 0 0 15px #BFE9FF; }
+
+footer {
+  background-color: #191919;
+  padding: 10px 0 16px; }
+
+.text-white {
+  color: #fff; }
+
+.text-default {
+  color: #666; }
+
+.container-orange {
+  background-color: #F79422; }
+
+.container-dark {
+  background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAADQAgMAAACCflLLAAAACVBMVEUmJiYlJSUkJCTa//UoAAACe0lEQVR4XoWUPW7jMBCFHwWHWLBKkTUM1SkWPgV1A9WpXKiw5xQ6AgsfQMUEIHnK9ZBDryPF2e7B1s/HT/MG8SUzJR+RZ2Li/haSZRryLeQwnfoSkjG5hIyuhuV1PEpIhi+dhNAzhWNEMpkpmojQ30KeDxiyhLiDKyF7mBIS9JpwQOokGHnOkWk5CkanT87hrb4rJzSM0GuAVR6gXoNpqjyWyQuPl3PZiKsTDH+G3/DYFmaSwAdE+4VHtHx2TIYEY3wf9wWDXwb6ChaAYiyBz0bC1THNHxFpEC0vEVyPfG4SdugrRkBXAxCOqqXITIIxil7BiIYvpkiY30ZXQgTUxuw0eNXCQCX0PFkJ7Ji8nMILj43gomX+QQvgC8+yA3cScEb2osXKAzu+oL7ifc2TTMN49RVj4EvFkOMIRjmgjVhWWrCdFviqbgcuWiCnEC1OtaBqeR17xTArLRqUULUUZpZpkdCmZbE6LSAJDNitFmo8tpTorLcXnvbAPE/T+jMNTcvbWLUY1bLsmUaSEhHTZxcR9gXjD5AbxkbLXLX80i5Duxxal00t0fup35To6bRMk21aQKpFPjdbHQBftew2Wnz768ZTR0t4su4Wvu+WcZq0RDC02S2rLuvQpja012dDOzcMaJeXA+J9t4wPXb4Y0qFtGKBm47mW013L0LTwvmnxEXPWs7tnWnbq8D4t9u758RWZf3vlMd0PXZ7vXXayW1TLsNotM7r/dDkUDMMXxdjuFu9WQfrVJryXEN1jidw/LXr2a5uW9KAFTcvyjZY9k1ctWiLe+VWJIvSXgc8u612jhEFKJENbSjR+1+Vuu1tqiQTjg+n6Y5e3u+UvUnUeYFH53kwAAAAASUVORK5CYII=') 0 0 repeat-x; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1002px; } }
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 3.1rem; }
+  footer {
+    text-align: center; }
+  .container-dark {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAFEAgMAAACi/g0qAAAACVBMVEUmJiYlJSUkJCTa//UoAAADbUlEQVR4XoWVPY7bMBBGh4IsLFSlEARDdQpDp6BTpEilYotg6y0MnYLJCVj4ACwogOIpw9H82LHspJvChD4+fm8M+ZxjXqsEYSxDDieoMg4ZoKXBg9mGFcAPOPgOVsBTJkH2bcxuKMMKMZlchuxrN2zDiidxyL7lwTY0xNrN22BjanCIbcx+Trc8sd++dQIz47AANJTH3hJaylNDMngKLlCyxOybBDmZuNothnu/tpzHSYzvHKML4zaYmCscAh4fy2D4goE+cRQIisUBKJYWB/8GK8VALBijRSwlBmPpPGHJiiUMj1jgC2P5XChPE7PFPDDHHPGZGoxhT2A3LPEOy0EG94FDfINEP8Y8eHzLU8VMWPzXKM/0i2PANxpC5xnLJ4UPfcEyJH13ufIR7COWXVuOBDMbxhsGwpIFS9i1RbFUgsWOjCVuWCJi+SiDRSyHBJGw/OQ8qdY8Nz5+ZiyrYpnGkqcvw1KwwIwxpq+h0YpysDPFuAIVe7Wf6YDDFcu/xUAsGIMEucBZIAwikWrlSbSO22Iu3JaeS0sxXOcpRgJgGm4nEYC0hSRKBYvD465gSU2CtDXTXeSZaqExSR6LaBFLDbHCwZY8Fp8JJYpGsNj3yHkEy02i2ovLK7k8PLo8sMvnmbE0u7b8z2XIhEVdttqWBz5KzCEWacssbWm0LSe5OygNHcSvWiTCPHScONuZP0F50pPdwljO6DJLNInLy97l9AQLu3wtLh/U5fGJy3uJ+pdt6QJhkc7bkbBIAfTu6o4O6pdUKzGWVjmzpzeJdLeIVupys3M5oURU2n+7PIrLW2YQlxt0mUorN1VTlMYeC4lPeZaKbqE7U9eFy/TRHRanxKRaFynbKyxesPzWFffK5Swuy24Rl/sHl4FdDiWGwQHYZc8ur4JFd4ud1R21SYokEsVW8th899zpIG35YFOMYnmQCNQ4xlIxlomxLI9tsT+ybBuJsarLk7i8oMuv/xCNYhnE5cM/XY7isu6W9uVu6a70TExVl5WS17fQ19Hdq2swypvqK+fU0rtrE5DfTiLaLSrRfsUt0sNJXVaJXq24dIclVuoyeSEVVXcUy363qIP6D8uemiTmHjWG2q2+6waQnaBbgiUyukn+lmgBpy73W4zmqctOXE5v0D7Bsv9DHO+wwEhYwkssvr+X6A9voSYf2Bsb+wAAAABJRU5ErkJggg==');
+    /*../image/bg-dark-sm.png*/ } }
+
+/* header */
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-brand {
+  height: auto;
+  padding: 15px 0 22px 0; }
+
+.navbar-right {
+  margin-top: 39px; }
+
+#user-name {
+  border-right: 1px solid #D2D2D2; }
+
+@media (max-width: 767px) {
+  .navbar-header {
+    float: left; }
+  .navbar-right {
+    float: right; }
+  .navbar-right li {
+    display: block;
+    text-align: right; }
+  #user-name {
+    border-right-width: 0; } }
+
+@media (max-width: 320px) {
+  .hidden-mobile {
+    display: none !important; }
+  .visible-mobile {
+    display: block !important; } }
+
+@media (min-width: 321px) {
+  .visible-mobile {
+    display: none !important; } }
+
+/* banner */
+#banner {
+  background-color: #191919; }
+
+#carousel-banner {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+/* learn with us */
+@media (max-width: 767px) {
+  #learn-with-us .btn-primary {
+    display: block;
+    margin: 0 auto; } }
+
+/* how it work icons*/
+.icon-work {
+  background: transparent url(../image/icon-work.png) no-repeat 0 0;
+  display: inline-block;
+  vertical-align: middle; }
+  .icon-work.icon-code {
+    background-position: 0 0;
+    width: 104px;
+    height: 102px; }
+  .icon-work.icon-console {
+    background-position: 0 -112px;
+    width: 145px;
+    height: 126px; }
+  .icon-work.icon-target {
+    background-position: 0 -248px;
+    width: 120px;
+    height: 107px; }
+
+.article-thumbnail {
+  line-height: 126px; }
+
+#work-description {
+  margin: 60px 0 110px; }
+
+@media (max-width: 767px) {
+  #how-it-work article {
+    text-align: left;
+    margin-bottom: 40px; }
+  #how-it-work .col-xs-6 {
+    text-align: center; }
+  #how-it-work h2 {
+    text-align: left; }
+  #how-it-work article p {
+    margin-top: 15px; }
+  p#work-description {
+    margin-top: 10px;
+    margin-bottom: 40px; } }
+
+/* Notify me*/
+#notify-me .form-inline {
+  margin: 20px 26px; }
+
+#notify-me .form-control {
+  width: 25rem; }
+
+#get-started .btn-primary {
+  margin: 33px 22px; }
+#get-started h2 {
+  margin-top: 30px; }
+
+@media (max-width: 767px) {
+  #get-started h2 {
+    margin: 40px 0; } }
+
+/*# sourceMappingURL=learn-apex.css.map */

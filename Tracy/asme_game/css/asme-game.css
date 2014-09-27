@@ -1,0 +1,808 @@
+
+/* common css */
+.cf:after
+{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear 
+{
+    clear: both;
+}
+
+body,
+div,
+ul,
+li,
+h2,
+h3,
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+img
+{
+    border: none;
+}
+
+body
+{
+    background: url("../images/BG.gif") repeat-x scroll 0 0 #fff5e7;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+#wrapper
+{
+    margin: 0 auto;
+    width: 965px;
+}
+
+/* top container css */
+.top-container
+{
+    height: 44px;
+    margin: 0 auto 7px;
+    width: 957px;
+}
+
+.top-container div.share-box
+{
+    float: left;
+    height: 44px;
+}
+
+.top-container div.left-corner,
+.top-container div.right-corner,
+.top-container div.fb-tw span.left,
+.top-container div.fb-tw span.right
+{
+    background: url("../images/top-container-sprite.png") no-repeat scroll 0 0 transparent;
+}
+
+.top-container div.centers,
+.top-container div.fb-tw span.content-text
+{
+    background: url("../images/top-container-1px-sprite.png") repeat-x scroll 0 0 transparent;
+}
+
+.top-container div.left-corner 
+{
+    background-position: 0 -158px;
+    padding-left: 8px;
+}
+
+.top-container div.centers 
+{
+    background-position: 0 -79px;
+    float: left;
+    width: 941px;
+}
+
+.top-container div.right-corner 
+{
+    background-position: 0 -252px;
+    padding-right: 8px;
+}
+
+.top-container div.fb-tw 
+{
+    float: left;
+    height: 29px;
+    padding: 5px 0 0 12px;
+}
+
+.top-container div.fb-tw span 
+{
+    display: inline-block;
+    float: left;
+    height: 29px;
+}
+
+.top-container div.fb-tw span.content-text 
+{
+    background-position: 0 0;
+    color: #868686;
+    font-size: 11px;
+    line-height: 29px;
+    padding: 0 8px;
+}
+
+.top-container div.fb-tw span.content-text a 
+{
+    font-weight: bold;
+}
+
+.top-container div.fb-tw span.content-text a.fb-link, .top-container div.fb-tw span.content-text a.fb-link:hover 
+{
+    color: #5470b2;
+}
+
+.top-container div.fb-tw span.content-text a.tw-link, .top-container div.fb-tw span.content-text a.tw-link:hover 
+{
+    color: #61d9e1;
+}
+
+.top-container div.fb-tw span.content-text a:hover 
+{
+    text-decoration: underline;
+}
+
+.top-container div.fb-tw span.content-text em 
+{
+    color: #000;
+    font-style: normal;
+    padding: 0 3px;
+}
+
+.top-container div.fb-tw span.left 
+{
+    background-position: 0 0;
+    padding-left: 5px;
+    width: 0;
+}
+
+.top-container div.fb-tw span.right 
+{
+    background-position: 0 -79px;
+    padding-left: 5px;
+    width: 0;
+}
+
+.top-container div.top-login 
+{
+    float: right;
+    height: 29px;
+    padding: 5px 3px 0 12px;
+}
+
+.top-container div.top-login div.main-login 
+{
+    position: relative;
+    z-index: 1500;
+}
+
+.top-container div.top-login span.login a, .top-container div.top-login span.register a 
+{
+    display: block;
+    float: left;
+    height: 29px;
+    margin-left: 6px;
+    text-indent: -50000px;
+    width: 98px;
+}
+
+.top-container div.top-login span.login a,
+.top-container div.top-login span.login a:hover
+{
+    background: url("../images/login-btn.png") no-repeat scroll left top transparent;
+}
+
+.top-container div.top-login span.login a:hover 
+{
+    background-position: left bottom;
+}
+
+.top-container div.top-login span.register a,
+.top-container div.top-login span.register a:hover
+{
+    background: url("../images/register-btn.png") no-repeat scroll left top transparent;
+}
+
+.top-container div.top-login span.register a:hover 
+{
+    background-position: left bottom;
+}
+
+.top-container div.top-login div.loginUser 
+{
+    color: #a6ef2a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 5px 0 0;
+}
+
+.top-container div.top-login div.loginUser em 
+{
+    color: #c5c5c5;
+    font-style: normal;
+    padding: 0 5px;
+}
+
+.top-container div.top-login div.loginUser a.userNameLink 
+{
+    color: #b0e3f8;
+    margin-left: 3px;
+}
+
+.top-container div.top-login div.loginUser a 
+{
+    color: #fffffc;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.top-container div.top-login div.loginUser a:hover 
+{
+    text-decoration: none;
+}
+
+/* header css */
+#header 
+{
+    height: 80px;
+}
+
+#header #logo 
+{
+    float: left;
+    margin-top: 23px;
+    padding-left: 28px;
+    text-align: center;
+}
+
+#header #nav 
+{
+    display: inline;
+    float: right;
+    margin-right: 0;
+    margin-top: 16px;
+}
+
+#header #nav li 
+{
+    display: inline;
+    float: left;
+    margin: 0 2px;
+    text-align: center;
+}
+
+#header #nav li a, 
+#header #nav li a:visited 
+{
+    color: #4b5558;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    padding-left: 8px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+#header #nav li a .right 
+{
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 8px;
+    width: auto;
+}
+
+#header #nav li a .middle 
+{
+    cursor: pointer;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    width: auto;
+}
+
+#header #nav li.current a, 
+#header #nav li.current a:visited,
+#header #nav li.current a .right,
+#header #nav li.current a .middle
+{
+    background: url("../images/navActive.png") no-repeat scroll left top transparent;
+}
+
+#header #nav li.current a .right 
+{
+    background-position: right -76px;
+}
+
+#header #nav li.current a .middle 
+{
+    background-position: right -38px;
+    background-repeat: repeat-x;
+}
+
+#header #nav li.current a span.arrow 
+{
+    background: url("../images/navActiveArrow.gif") no-repeat scroll center bottom transparent;
+    bottom: -7px;
+    display: block;
+    height: 8px;
+    left: 50%;
+    margin-left: -6px;
+    position: absolute;
+    width: 12px;
+}
+
+#header #nav li a:hover 
+{
+    color: #000001;
+}
+
+#header #nav li.current a:hover 
+{
+    color: #4b5558;
+}
+
+/* content css */
+#content
+{
+    background: url("../images/content-border.png") repeat-y scroll center top transparent;    
+}
+
+#content .container
+{
+    background-color: #fff;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin: 0 auto;
+    width: 949px;
+}
+
+#content .container-top
+{
+    background: url("../images/content-top.png") no-repeat scroll left top transparent;
+    height: 9px;    
+}
+
+/* thumbs navigation css */
+#content .thumb-nav
+{
+    height: 179px;
+    position: relative;
+    top: -5px;
+}
+
+.thumb-nav .asme-logo-con
+{
+    border-right: 1px solid #ececec;
+	border-bottom: 1px solid #fff;
+    height: 157px;
+    width: 355px;
+}
+
+.thumb-nav .asme-logo
+{
+    float:left;
+    padding-left: 24px;
+    padding-top: 39px;
+    width: 316px;
+}
+
+.thumb-nav .thumbs
+{
+    float: right;
+    width: 594px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 170px;
+    overflow: hidden;
+}
+
+.thumb-nav .right-align
+{
+    text-align: right;
+}
+
+.thumb-nav .right-align ul
+{
+    display: inline-block;
+}
+
+.thumb-nav .thumbs ul li
+{
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 158px;
+    position: relative;
+    width: 198px;
+    text-align: center;
+}
+
+.thumb-nav .thumbs ul li a
+{
+    color: #1f9dd1;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-top: 1px;
+}
+
+.thumb-nav .thumbs ul li img
+{
+     margin: 14px auto 0;
+}
+
+.thumb-nav .thumbs ul li.active a
+{
+    color: #333;
+}
+
+.thumb-nav .thumbs ul li.active,
+.thumb-nav .thumbs ul li.active:hover,
+.thumb-nav .thumbs ul li:hover,
+.thumb-nav .thumbs ul .radius-bg:hover,
+.thumb-nav .thumbs ul li.active .active-arrow
+{
+    background: url(../images/thumbs-bg-sprite.png) no-repeat scroll 0 0 transparent;
+}
+
+.thumb-nav .thumbs ul li.active,
+.thumb-nav .thumbs ul li.active:hover
+{
+    background-position: 0 -273px;
+}
+
+.thumb-nav .thumbs ul li.active.radius-bg,
+.thumb-nav .thumbs ul li.active.radius-bg:hover
+{
+    background-position: 0 0;
+}
+
+.thumb-nav .thumbs ul li:hover
+{
+    background-position: 0 -691px;
+}
+
+.thumb-nav .thumbs ul .radius-bg:hover
+{
+    background-position: 0 -481px;
+}
+
+.thumb-nav .thumbs ul li .active-arrow
+{
+    position: absolute;
+    width: 198px;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+}
+
+.thumb-nav .thumbs ul li.active .active-arrow
+{
+    background-position: 0 -208px;
+    bottom: -14px;
+    z-index: 100;
+}
+
+/* pagination css */
+.thumb-nav .pagination
+{
+    background-color: #f5f5f5;
+    height: 27px;
+    position: relative;
+    text-align: right;
+}
+
+.thumb-nav .pagination ul
+{
+    display: inline;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.thumb-nav .pagination ul li
+{
+    cursor: pointer;
+    display: inline;
+    margin-right: 4px;
+}
+
+.thumb-nav .pagination ul li span
+{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.thumb-nav .pagination ul li span,
+.thumb-nav .pagination ul li.current span,
+.thumb-nav .pagination ul li:hover span
+{
+    background: url(../images/icons-sprite.png) no-repeat scroll 0 0 transparent;
+}
+
+.thumb-nav .pagination ul li span
+{
+    background-position: 0 -142px;
+}
+
+/* asme game how to play css */
+#content .asme-game-con
+{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #fff;
+}
+
+.asme-game .headline
+{
+    background: url(../images/icons-sprite.png) no-repeat scroll 0 -62px transparent;
+    height: 45px;
+	margin-left: 25px;
+}
+
+.asme-game .play-guide img
+{
+    display: block;
+	margin: 0 auto;
+}
+
+.asme-game .headline h2 span
+{
+    color: #999;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-left: 57px;
+}
+
+.asme-game .play-action
+{
+    text-align: center;
+}
+
+.asme-game .play-action .buttons
+{
+    display: inline-block;
+    padding-top: 23px;
+    height: 74px;
+}
+
+.asme-game .play-action .buttons a
+{
+    background-color: #1f9dd1;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.asme-game .play-action .buttons a:hover
+{
+    background-color: #197fa9;
+}
+
+.asme-game .play-action .buttons a.register-btn
+{
+    width: 136px;
+    margin-right: 15px;
+}
+
+.asme-game .play-action .buttons a.play-btn
+{
+    width: 160px;
+}
+
+/* footer links css */
+.footer-links
+{
+    background-color: #f0eee8;
+}
+
+.footer-links .links
+{
+    padding-top: 31px;
+    padding-bottom: 22px;
+    padding-left: 44px;
+}
+
+.footer-links .links .list
+{
+    float: left;
+    padding-right: 10px;
+    width: 247px;
+}
+
+.footer-links .links .list3
+{
+    width: 173px;
+}
+
+.footer-links .links .list span
+{
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-links .links .list a
+{
+    color: #1f9dd1;
+    font-size: 14px;
+}
+
+.footer-links .links .list a:hover
+{
+    border-bottom: 1px solid #1f9dd1;
+}
+
+.footer-links .links .list ul
+{
+    margin-top: 23px;
+}
+
+.footer-links .links .list ul li
+{
+    margin-bottom: 6px;
+}
+
+.footer-links .links .social
+{
+    float: left;
+}
+
+.footer-links .links .social ul
+{
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.footer-links .links .social ul li
+{
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    margin-right: 7px;
+}
+
+.footer-links .links .social ul li.last
+{
+    margin-right: 0;
+}
+
+.footer-links .links .social .logo
+{
+    margin-top: 0;
+}
+
+.footer-links .links .social ul li a,
+.footer-links .links .social ul li a:hover
+{
+    background: url("../images/social-icon-sprite.png") no-repeat scroll left top transparent;
+    text-decoration: none;
+}
+
+.footer-links .links .social ul li a
+{
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+
+.footer-links .links .social ul li.facebook a
+{
+    background-position: 0 0;
+}
+
+.footer-links .links .social ul li.facebook a:hover
+{
+    background-position: 0 -84px;
+}
+
+.footer-links .links .social ul li.twitter a
+{
+    background-position: 0 -504px;
+}
+
+.footer-links .links .social ul li.twitter a:hover
+{
+    background-position: 0 -588px;
+}
+
+.footer-links .links .social ul li.plus a
+{
+    background-position: 0 -336px;
+}
+
+.footer-links .links .social ul li.plus a:hover
+{
+    background-position: 0 -420px;
+}
+
+.footer-links .links .social ul li.in a
+{
+    background-position: 0 -168px;
+}
+
+.footer-links .links .social ul li.in a:hover
+{
+    background-position: 0 -252px;
+}
+
+/* game powered part css*/
+.game-power
+{
+    background: url("../images/power-bg.png") no-repeat scroll left top transparent;
+    color: #666;
+    font-size:14px;
+    height: 47px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.game-power a
+{
+    color: #666;
+    font-weight: bold;
+}
+
+.game-power a:hover
+{
+    border-bottom: 1px solid #666;
+}
+
+/* footer css */
+#footer 
+{
+    color: #c2c2c2;
+    font-size: 13px;
+    padding-bottom: 24px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#footer ul 
+{
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+#footer ul li 
+{
+    border-left: 1px solid #adabab;
+    display: inline;
+    float: left;
+    padding: 0 10px;
+}
+
+#footer ul li.first 
+{
+    border: medium none;
+}
+
+#footer ul li a,
+#footer ul li a:visited 
+{
+    color: #adabab;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer ul li a:hover 
+{
+    text-decoration: none;
+    border-bottom: 1px solid #adabab;
+}
+
+
+
