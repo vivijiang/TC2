@@ -1,246 +1,175 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Mummified Basketball Star page</title>
-    <link rel="Shortcut Icon" href="images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/asme-game.css" media="all" />
-	<!--[if lt IE 8]>
-	   <link rel="stylesheet" type="text/css" href="css/asme-game_ie.css" media="all" />
-	<![endif]-->
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/asme-game.js"></script>
-</head>
-<body>
-    <div id="wrapper">
-        <!-- Start top banner -->
-        <div class="top-container">
-            <div class="left-corner share-box"></div>
-            <div class="centers share-box">
-                <!-- Start fb tw -->
-                <div class="fb-tw">
-                    <span class="left"></span>
-                    <span class="content-text">Follow us on:
-                        <a class="fb-link" href="https://www.facebook.com/NoNameSite">Facebook</a> <em>|</em>
-                        <a class="tw-link" href="http://twitter.com/#!/NoNameSite_com">Twitter</a>
-                    </span>
-                    <span class="right"></span>
-                </div>
-                <!-- End fb tw -->
-                <!-- Start login register -->
-                <div class="top-login">
-                    <div class="main-login">
-                        <div class="loginSection">
-                            <span class="login">
-                                <a href="#">login</a>
-                            </span>
-                            <span class="register">
-                                <a href="https://www.nonamesite.com/web/cs-stem/register?fromNormalRegisterBtn=true" class="registerBtn">register</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- End login register -->
-            </div>
-            <div class="right-corner share-box"></div>
-        </div>
-        <!-- End top banner -->
+﻿<!DOCTYPE html>
+<html lang="en">
 
-        <!-- Start header -->
-        <div id="header">
-            <div id="logo">
-                <a title="NONAMESITE.COM" href="http://www.nonamesite.com">
-                    <img alt="logo" src="images/logo.png" />
+<head>
+    <meta charset="UTF-8">
+    <title>Learn Apex Homepage</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" id="bootstrap-css" href="bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="bootstrap-css" href="css/learn-apex.min.css" type="text/css" media="all">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="image/logo.png" alt="topcoder">
                 </a>
             </div>
-            <ul id="nav">
-                <li><a title="Home" href="https://www.nonamesite.com/web/cs-stem/home"><span class="arrow"></span><span class="right"><span class="middle">Home</span></span></a></li>
-                <li><a title="Contests" href="https://www.nonamesite.com/web/cs-stem/contests"><span class="arrow"></span><span class="right"><span class="middle">Contests</span></span></a></li>
-                <li class="current"><a title="Games" href="https://www.nonamesite.com/web/cs-stem/activities"><span class="arrow"></span><span class="right"><span class="middle">Games</span></span></a></li>
-                <li><a title="Forums" href="https://www.nonamesite.com/web/cs-stem/forums"><span class="arrow"></span><span class="right"><span class="middle">Forums</span></span></a></li>
-                <li><a title="Blogs" href="https://www.nonamesite.com/web/cs-stem/blogs"><span class="arrow"></span><span class="right"><span class="middle">Blogs</span></span></a></li>
-                <li><a title="Coding School" href="https://www.nonamesite.com/web/cs-stem/coding-school-home"><span class="arrow"></span><span class="right"><span class="middle">SoCo</span></span></a></li>
+            <ul class="list-inline navbar-right">
+                <li id="user-name">
+                    Welcome
+                    <span class="text-emphsize">Username</span>
+                </li>
+                <li>
+                    <a class="text-emphsize" href="#">Logout</a>
+                </li>
             </ul>
-            <div class="clear"></div>
+            <!--/.navbar-collapse -->
         </div>
-        <!-- End header -->
-
-        <!-- Start content -->
-        <div id="content">
-            <div class="container-top"></div>
-            <div class="container">
-                <!-- Start thumbs navigation -->
-                <div class="thumb-nav">
-                    <div class="thumb-con cf">
-                        <div class="asme-logo-con">
-                            <div class="asme-logo">
-                                <a href="#">
-                                    <img alt="" src="images/asme-logo.png" /></a>
-                            </div>
-                        </div>
-                        <div class="thumbs">
-                            <ul class="cf">
-                                <li class="active">
-                                    <img src="images/thumb-basketball.png" title="Mummified Basketball Star" alt="Mummified Basketball Star" />
-                                    <h3><a href="asme_basketball.html">Mummified BasketBall Star</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-billiard.png" title="The Billiard" alt="The Billiard" />
-                                    <h3><a href="asme_billiards.html">The Billiard</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html?id=4">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html?id=5">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html?id=6">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html?id=7">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html?id=8">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                                <li>
-                                    <img src="images/thumb-newgame.png" title="New Game Title1" alt="New Game Title1" />
-                                    <h3><a href="asme_game_lp.html?id=9">New Game Title1</a></h3>
-                                    <div class="active-arrow"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <ul>
-                            <li class="current"><span>&nbsp;</span></li>
-                            <li><span>&nbsp;</span></li>
-                            <li><span>&nbsp;</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End thumbs navigation -->
-
-                <!-- Start game how to play -->
-                <div class="asme-game-con">
-                    <div class="asme-game">
-                        <div class="headline">
-                            <h2><span>Mummified Basketball Star</span></h2>
-                        </div>
-                        <div class="play-guide">
-                            <img alt="" src="images/basketball-how-to-play.png" />
-                        </div>
-                        <div class="play-action">
-                            <div class="buttons">
-                                <a class="register-btn" title="Register" href="https://www.nonamesite.com/web/cs-stem/basketball-landing">Register</a>
-                                <a class="play-btn" title="Start Playing" href="https://www.nonamesite.com/web/cs-stem/basketball">Start Playing</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End game how to play -->
-
-                <!-- Start footer links -->
-                <div class="footer-links">
-                    <div class="links cf">
-                        <div class="list list1">
-                            <div>
-                                <span>Resource</span>
-                            </div>
-                            <ul>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                            </ul>
-                        </div>
-                        <div class="list list2">
-                            <div>
-                                <span>Games</span>
-                            </div>
-                            <ul>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                            </ul>
-                        </div>
-                        <div class="list list3">
-                            <div>
-                                <span>Latest News</span>
-                            </div>
-                            <ul>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                                <li><a href="#">Link Lorem ipsum</a></li>
-                            </ul>
-                        </div>
-                        <div class="social">
-                            <div class="logo">
-                                <a href="https://www.asme.org/">
-                                    <img src="images/footerlogo.png" alt="" />
-                                </a>
-                            </div>
-                            <ul>
-                                <li class="facebook first"><a href="#"><span>&nbsp;</span></a></li>
-                                <li class="twitter"><a href="#"><span>&nbsp;</span></a></li>
-                                <li class="plus"><a href="#"><span>&nbsp;</span></a></li>
-                                <li class="in last"><a href="#"><span>&nbsp;</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End footer links -->
-
-            </div>
-
-            <!-- Start game power -->
-            <div class="container-bottom">
-                <div class="game-power">
-                    <div>Games powered by <a href="http://nonamesite.com">NoNameSite.com</a></div>
-                </div>
-            </div>
-            <!-- End game power -->
-
-        </div>
-        <!-- End content -->
-
-        <!-- Start footer and copyright -->
-        <div id="footer">
-            <ul>
-                <li class="first"><a href="https://www.nonamesite.com/web/cs-stem/home">Home</a></li>
-                <li><a href="https://www.nonamesite.com/web/cs-stem/about">About Us</a></li>
-                <li><a href="https://www.nonamesite.com/web/cs-stem/contact-us">Contact Us</a></li>
-                <li><a href="https://www.nonamesite.com/web/cs-stem/terms">Terms and Conditions</a></li>
-                <li><a href="https://www.nonamesite.com/web/cs-stem/privacy">Privacy</a></li>
-            </ul>
-            <div class="clear"></div>
-            <p>Copyright © 2001 - 2010, NoNameSite. All rights reserved.</p>
-        </div>
-        <!-- End footer and copyright -->
-
-
     </div>
+    <div id="banner" class="container-dark">
+        <div id="carousel-banner" class="carousel slide hidden-mobile" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="image/banner1.png" alt="Learn Apex Banner">
+                </div>
+                <div class="item">
+                    <img src="image/banner2.png" alt="Learn Apex Banner">
+                </div>
+            </div>
+        </div>
+        <div class="visible-mobile">
+            <img src="image/banner2-sm.png" alt="Learn Apex Banner">
+        </div>
+    </div>
+    <div id="learn-with-us" class="container-orange">
+        <div class="container">
+            <div class="row lead">
+                <div class="col-sm-3 col-xs-6 text-white">
+                    <strong>202</strong>Exercises.
+                </div>
+                <div class="col-sm-2 col-xs-6 text-white">
+                    <strong>500</strong>Learners.
+                </div>
+                <div class="col-sm-7 text-right">
+                    Learn with us. It's simple and easy.
+                    <button class="btn btn-primary">Start Now
+                        <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="how-it-work">
+        <div class="container">
+            <h1>How it Works</h1>
+            <div class="row">
+                <article class="image-post col-sm-4  text-center">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12">
+                            <div class="icon-work icon-code"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <h2>Code</h2>
+                        </div>
+                    </div>
+
+
+                    <p class="text-left">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa. veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </article>
+                 <article class="image-post col-sm-4  text-center">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12">
+                            <div class="icon-work icon-console"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <h2>Console</h2>
+                        </div>
+                    </div>
+
+                    <p class="text-left">
+                        Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. magn.dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </article>
+                   <article class="image-post col-sm-4  text-center">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-12">
+                            <div class="icon-work icon-target"></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-12">
+                            <h2>Learning</h2>
+                        </div>
+                    </div>
+
+                    <p class="text-left">
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt . magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                    </p>
+                </article>
+            </div>
+            <p id="work-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+    <div id="notify-me" class="container-bright effect7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Notify me</h2>
+                    <small>
+                        Stay up to date on the latest tutorials by subscribing to our blog.
+                    </small>
+                    <form class="form-inline form-single-input" role="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" type="email" placeholder="email address">
+                                <div class="input-group-addon submit-wrapper">
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="get-started" class="container-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-white">Don’t wait another day. Get started Today!</h2>
+                    <small>
+                        Take it step by step, use or console and test enviroment to see how things work out.
+                    </small>
+                    <div>
+                        <button class="btn btn-primary">Start Now
+                            <span class="glyphicon glyphicon-play"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            Copyright © 2014 Appirio. All rights reserved.
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
+
 </html>
