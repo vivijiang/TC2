@@ -1,0 +1,140 @@
+    <audio id="player" src="data/notification.mp3"></audio>
+    <audio id="chatSound" src="data/chat.mp3"></audio>
+	<div class="anon-header" data-ng-hide="loggedIn()">
+        <div class="navbar navbar-top" role="navigation">
+            <div class="container-fluid">
+              <h1 class="navbar-title">
+                <a class="navbar-brand" href="http://www.topcoder.com">topcoder</a>
+              </h1>
+           </div>
+        </div>
+    </div>
+    <div class="header" data-ng-show="loggedIn()">
+        <div class="navbar navbar-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a data-ng-init="navCollapsed = true" data-ng-click="navCollapsed = !navCollapsed" class="btn btn-navbar navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h1 class="navbar-title"> <a class="navbar-brand" href="http://www.topcoder.com">topcoder</a></h1>
+                </div>
+
+                <div data-collapse="navCollapsed" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navIcons">
+                        <li data-ng-class="{ active: $state.includes('user.dashboard') }">
+                          <a data-ui-sref="user.dashboard" class="icon iconLobby">LOBBY</a><a data-ui-sref="user.dashboard" class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Lobby" data-ng-click="returnLobby()"></a>
+                        </li>
+			<!--
+                        <li data-ng-class="{ active: $state.includes('user.contests') || $state.includes('user.contest') || $state.includes('user.coding') || $state.includes('user.contestSummary')}">
+                          <a class="icon iconContests">CONTESTS</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Contests"></a>
+                        </li>
+                        <li data-ng-class="">
+                          <a class="icon iconVC">VIRTUAL CONTEST</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Virtual contest"></a>
+                        </li>
+                        <li data-ng-class="">
+                          <a class="icon iconSettings">SETTINGS</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Settings"></a>
+                        </li>
+                        <li data-ng-class="">
+                          <a class="icon iconTools">TOOLS</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Tools"></a>
+                        </li>
+                        <li data-ng-class="">
+                          <a class="icon iconHelp">HELP</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Help"></a>
+                        </li>
+                        <li data-ng-class="">
+                          <a class="icon iconPT">PROBLEM TRACKER</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Problem tracker"></a>
+                        </li>
+			-->
+                        <li class="themeSwitcher" data-ng-class="">
+                          <a id="iconTS" class="icon iconTS" data-ng-click="openThemeSelector($event)">THEME SWITCHER</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="{{themePanelOpen ? null : 'Theme switcher'}}" data-ng-click="openThemeSelector($event)" ></a>
+                          <div class="themePanel" data-ng-show="themePanelOpen" id="themePanel">
+                            <h4>Themes&nbsp;({{themesInfo.themes.length}})</h4>
+                            <a class="closeBtn" data-ng-click="cancelTheme()"></a>
+                            <div class="themesBox">
+                              <p data-ng-repeat="theme in themesInfo.themes track by $index" class="themeItem">
+                                <input type="radio" data-ng-model="$parent.themeInUse" value="{{theme.key}}" name="themes" id="theme-{{$index}}" class="themeRadio"><label for="theme-{{$index}}" class="themeLbl">{{theme.label}}</label>
+                              </p>
+                            </div><!--/.themesBox-->
+                            <a class="btn" data-ng-click="applyTheme()">APPLY</a>
+                          </div>
+                        </li>
+                        <li data-ng-class="{lastLi: !(userInfo() && (userInfo().admin === true))}">
+                          <a class="icon iconBug">REPORT ISSUE</a><a href="https://github.com/cloudspokes/arena-web/issues" target="_blank" class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Report Issue"></a>
+                        </li>
+                        <li data-ng-click="createContest();" data-ng-show="userInfo() && (userInfo().admin === true)">
+                            <a class="icon iconCC">CONTEST CREATION</a><a class="visible-lg visible-md tip" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Contest creation wizard"></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right navOther">
+                        <li class="timeItem"><div data-topcodertime></div></li>
+                        <li class="userItem">
+                            <ul class="nav navbar-nav userInfo">
+                                <li class="userName">Welcome&nbsp;<span class="{{getRatingClass(userInfo().rating)}}">{{ username() }}</span></li>
+                                <li><a class="notification" data-message-arena="" id="qtipNoti" data-ng-click="onClickMessageArena()" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Messages"><span id="notiIndicator" data-ng-show="notificationService.getUnRead() > 0">{{ notificationService.getUnRead() }}</span></a></li>
+                                <li><a data-ui-sref="user.logout" class="arrow" data-tooltip-popup-delay='100' data-tooltip-placement="bottom" data-tooltip="Logout"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </div>
+    <div class='notifications top-right'></div>
+    <div class='notifications bottom-right'></div>
+    <div data-ui-view></div>
+    <footer data-ng-show="loggedIn()">
+        <div class="line"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="left hidden-xs hidden-sm col-md-4 col-lg-4">
+                    <span>OUR SPONSOR</span>
+                </div>
+                <div class="right col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a href="http://community.topcoder.com/tco14/sponsor/hp-idol-ondemand/" target="_blank" class="sponsorLogo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/ng-template" id="popupModalBase.html">
+    <div class="modal-header">
+        {{ title }}
+        <span class="cancel-x" data-ng-click="cancel()" ng-if="enableClose">X</span>
+    </div>
+    <div class="modal-body" data-ng-custom-scrollbar data-rebuild-on-resize data-rebuild-on="popup-message-loaded">
+        <p ng-bind-html="message"></p>
+        <br/>
+    </div>
+    <div class="modal-footer" ng-if="enableClose">
+        <button class="btn right-btn" data-ng-click="ok()" data-ng-show="buttons.length == 2">{{ buttons[0] }}</button>
+        <button class="btn left-btn" data-ng-click="cancel()" data-ng-show="buttons.length == 2">{{ buttons[1] }}</button>
+        <button class="btn right-btn" data-ng-click="cancel()" data-ng-show="buttons.length == 1">{{ buttons[0] }}</button>
+    </div>
+</script>
+
+<script type="text/ng-template" id="popupModalDetailBase.html">
+    <div class="modal-header coder-history-modal-header">
+        {{ title }}
+        <span class="cancel-x" data-ng-click="ok()" ng-if="enableClose">X</span>
+    </div>
+    <div class="modal-body textAlign textColor">
+        <p ng-bind-html="message" class="coder-history-textMargin"></p>
+    </div>
+    <div class="modal-footer textAlign">
+        <button class="btn" data-ng-click="ok()">Close</button>
+    </div>
+</script>
+
+<script type="text/ng-template" id="popupValidationDetail.html">
+    <div class="modal-header">
+        {{ title }}
+        <span class="cancel-x" data-ng-click="ok()" ng-if="enableClose">X</span>
+    </div>
+    <div class="modal-body validation-modal-body" data-ng-custom-scrollbar data-rebuild-on-resize data-rebuild-on="rebuild:inputValidation">
+        <p ng-bind-html="message"></p>
+    </div>
+    <div class="modal-footer textAlign" ng-if="enableClose">
+        <button class="btn" data-ng-click="ok()">Close</button>
+    </div>
+</script>

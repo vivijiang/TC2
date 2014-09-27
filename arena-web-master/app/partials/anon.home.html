@@ -1,0 +1,77 @@
+<div class="hero">
+    <div class="container">
+        <div class="row form signup">
+            <div class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                <div class="loginBox"> 
+                    <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <span class="errorMessage" data-ng-show="isUsernameEmpty">Username cannot be empty</span>
+                        <span class="errorMessage" data-ng-show="isPasswordEmpty">Password cannot be empty</span>
+                        <span class="errorMessage" data-ng-show="hasError">Invalid username or password. Please try again.</span>
+                        <span class="errorMessage" data-ng-show="$root.loginTimeout">Login time out. Please try again at later time.</span>
+                        <header>Login with your topcoder account<span class="hidden-xs">or</span></header>
+                        <form name="accountLoginForm" novalidate class=" tcAccountBox" data-ng-submit="accountLogin();" auto-fill-fix>
+                          <p class="data">
+                            <label>Username</label>
+                            <input type="text" name="username" required data-ng-model="username" data-ng-class="{error: hasErrorForm && (isUsernameEmpty || hasError)}" data-ng-pattern="/^[A-z][A-z0-9-]*$/" data-ng-keypress="hasErrorForm=false"/>
+                          </p>
+                          <p class="data">
+                            <label>Password</label>
+                            <input type="password" name="password" required data-ng-model="password" data-ng-class="{error: hasErrorForm && (isPasswordEmpty || hasError)}" data-ng-pattern="/^.+$/" data-ng-keypress="hasErrorForm=false"/>
+                          </p>
+                          <p>
+                            <input type="checkbox" name="remember" id="remember" data-ng-model="remember" class="rememberCheckbox"/>
+                            <label for="remember" class="rememberCheckboxLabel"></label>
+                            <label for="remember" class="rememberLbl">Remember me</label>
+                          </p>
+                          <p>  
+                            <input type="submit" value="Login" class="btn btn-primary btn-lg" />
+                          </p>  
+                            <div class="clearfix"></div>
+                        </form>
+                        <!-- /.tcAccountBox -->
+                        <div class="separator hidden-xs"></div>
+                    </div>
+                    <!-- / account box -->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 social">
+                        <header>Login with your social media account</header>
+                        <div>
+                            <p><a data-ng-click="socialLogin('facebook');" class="btn btn-primary btn-lg btn-facebook">Facebook</a></p>
+                            <p><a data-ng-click="socialLogin('twitter');" class="btn btn-primary btn-lg btn-twitter">Twitter</a></p>
+                            <p><a data-ng-click="socialLogin('google-oauth2');" class="btn btn-primary btn-lg btn-google">Google+</a></p>
+                            <p><a data-ng-click="socialLogin('github');" class="btn btn-primary btn-lg btn-github">GitHub</a></p><!-- update, use github account to login -->
+                        </div>
+                    </div>
+                    <!-- /.social -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 registerRow">
+                        New User? <a href="http://www.topcoder.com/?action=callback">Click here to Register</a>
+                    </div>
+                    <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>OUR SPONSOR</p>
+                        <p><a class="sponsorLogo" href="http://community.topcoder.com/tco14/sponsor/hp-idol-ondemand/" target="_blank"></a></p>
+                    </footer>
+                </div>
+                <!-- /.loginBox -->
+            </div>
+                
+        </div>
+        <!-- /.loginBox -->
+        <div class="row text">
+            <p class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                <span>
+Any use of the topcoder Arena, including the practice area, is limited to personal, non-commercial or educational purposes only. If you wish to utilize the topcoder Arena, or any topcoder information, including statistical information, for commercial purposes, including, but not limited to, recruiting, testing or training, please contact topcoder by email: <a href="mailto:support@topcoder.com">support@topcoder.com</a>.
+<br />
+<br />
+By logging into the arena, you indicate your agreement to these terms as well as those specified in the TopCoder Terms of Service on our website.
+<br />
+<br />
+Protected by U.S. patent number 6,569,012
+<br />
+<br />
+All content on the website and in the arena (c)2014 Appirio, Inc.  All Rights Reserved.
+            	</span>
+            </p>
+        </div>
+    </div><!-- /.container -->
+</div>
+<!-- /.hero -->
+

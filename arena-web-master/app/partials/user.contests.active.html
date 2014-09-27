@@ -1,0 +1,78 @@
+<div class="panel panel-custom">
+	<div class="panel-heading">
+        Active Contests
+    </div>
+    <div class="panel-body" data-ng-show="getContests().length > 0">
+        <div data-ng-repeat="contest in getContests() track by $index" data-ng-show="$index == currentContest" class="mainContent">
+            <p class="infoRow">
+<!--                <span >Single Round Match</span> -->
+                <span class="textWhite">{{ contest.contestName }}</span>
+                <span class="textRed" data-ng-show="contest.roundType == 2">{{ contest.roundName }}</span>
+                <span>{{ countdownPrefix(contest) }}</span>
+                <span class="textRed" data-ng-show="isCountingDown(contest)">{{ displayCountDown(contest) }}.</span>
+            </p>
+            <!-- /.infoRow -->
+            <div class="tabs">
+                <ul class="nav nav-tabs hidden-xs">
+                    <li data-ng-class="{'textActive': contest.detailIndex == 0}" data-ng-click="setDetailIndex(contest, 0)">Contest Summary</li>
+                    <li data-ng-class="{'textActive': contest.detailIndex == 1}" data-ng-click="setDetailIndex(contest, 1)">Contest Schedule</li>
+                    <li data-ng-class="{'textActive': contest.detailIndex == 3}" data-ng-click="setDetailIndex(contest, 3)" data-ng-show="isShownRooms(contest)">Rooms</li>
+                </ul>
+                <!-- button and label will show when window is very narrow -->
+                <ul class="nav altNav visible-xs">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle">
+                            {{ getTabName(contest.detailIndex) }}<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li data-ng-class="{'textActive': contest.detailIndex == 0}" data-ng-click="setDetailIndex(contest, 0);">Contest Summary</li>
+                            <li data-ng-class="{'textActive': contest.detailIndex == 1}" data-ng-click="setDetailIndex(contest, 1);">Contest Schedule</li>
+                            <li data-ng-class="{'textActive': contest.detailIndex == 3}" data-ng-click="setDetailIndex(contest, 3);" data-ng-show="isShownRooms(contest)">Rooms</li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- button to 'Register' and 'Enter' a contest -->
+                <a data-ng-click="doAction(contest)" data-ng-show="isShown(contest)" data-ng-disabled="okDisabled" class="btn">{{ getAction(contest) }}</a>
+                <span data-ng-show="isShownRegistered(contest)" data-ng-disabled="okDisabled" class="btntext">Registered</span>
+            </div>
+            <div  data-ng-show="contest.detailIndex == 0" class="summaryPanel">
+                <div data-ng-bind-html="contest.summary" class="summaries textWhite"></div>
+            </div>
+            <!-- /.summaryPanel -->
+            <div data-ng-show="contest.detailIndex == 1" class="schedulePanel">
+                <div data-ng-repeat="phase in contest.phases"
+                data-ng-init="time0=getPhaseTime(phase, 0, contest.phaseData); time1=getPhaseTime(phase, 1, contest.phaseData);">
+                    <span class="title textWhite">{{ phase.title }}</span>
+                    <br class="visible-xs breakline"/>
+                    <span class="startIn"><span class="hidden-xs">:&nbsp;</span>{{ time0.key }}<span data-ng-show="time0.key.length>0"> at</span></span>
+                    <span class="startTime">{{ time0.value }}</span>
+                    <br class="visible-xs breakline"/>
+                    <span class="endIn">{{ time1.key }}<span data-ng-show="time1.key.length>0"> at</span></span>
+                    <span class="endTime">{{ time1.value }}</span>
+                </div>
+            </div>
+            <!-- /.schedulePanel -->
+            <div data-ng-show="contest.detailIndex == 3 && isShownRooms(contest)" class="roomsPanel roomsDiv">
+                <div class="roomsDivScroll" data-ng-custom-scrollbar data-scroll-top data-rebuild-on-resize data-rebuild-on="rebuild:roomslist">
+                    <ul>
+                        <li data-ng-repeat="room in getRoomsList(contest) | startFrom:(currentPage-1)*pageSize | limitTo:pageSize"><a data-ng-click="moveToRoom(contest, room.roomID)">{{room.roomTitle}}</a></li>
+                    </ul>
+                </div>
+                <div class="pagination" data-ng-hide="numberOfPages(contest) === 1"><a data-ng-hide="currentPage === 1" data-ng-click="prevPage()">Prev</a><span> {{currentPage}} / {{numberOfPages(contest)}} </span><a data-ng-hide="numberOfPages(contest) === currentPage" data-ng-click="nextPage()">Next</a></div>
+            </div>
+        </div>
+        <!-- /.mainContent -->
+        <div class="paginator" data-ng-show="getContests().length > 1">
+            <span data-ng-repeat="n in range(getContests().length) track by $index" data-ng-class="{'textActive': $index == currentContest}" data-ng-click="setCurrentContest($index)">{{$index+1}}</span>
+        </div>
+        <!-- /.paginator -->
+    </div>
+    <div class="panel-body" data-ng-show="getContests().length == 0">
+        <div class="mainContent">
+            <p class="infoRow">
+                <span class="textWhite">There are no active contests. Please check the schedule and try again later.</span>
+            </p>
+        </div>
+    </div>
+    <!-- /.panel-body -->
+</div>

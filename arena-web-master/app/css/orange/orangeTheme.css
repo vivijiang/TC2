@@ -1,0 +1,1229 @@
+body{
+    background:#fff;
+    color:#333;
+}
+.btn-facebook:after,
+.btn-twitter:after,
+.btn-google:after,
+.btn-github:after,
+.dashboard .titleBar .brand,
+.panel-custom .summaryPanel:after,
+.panel-custom .schedulePanel:after,
+.panel-custom .statusPanel:after,
+.panel-custom .roomsPanel:after,
+.panelSummary .summaryWrapper div:before{
+    background-image: url(../img/orange/sprite.png);
+}
+.dashboard .breadcrumb li:after,
+.contest .titleBar .shareLink a,
+.panelContestStat .breadcrumbHead .breadcrumb li:before {
+    background-image: url(../img/orange/sprite-2.png);
+}
+.codeArea .vote:before,
+.codeArea .titleBar .shareLink > ul > li > a:after,
+.codeArea .socialLinks a:before,
+.panelCodeEditor .actionIcons > li:before,
+.panelCodeEditor .toolBar .middlePart .findInput > a,
+.panelCodeEditor .toolBar .middlePart .arrow:before,
+.panelCodeEditor .settingsToggle:before,
+.panelCodeEditor .toolBar .editorCheckLbl:before,
+.panelCodeEditor .toolBar .testToggle:before,
+.panelCodeEditor .panel-body .settingsPanel .closeIcon,
+.panelCodeEditor .testPanel header>a,
+.panelCodeEditor .testPanel .caseLbl:before,
+.panelCodeEditor .testPanel .btnRow label:before,
+.panelOverview .panel-heading .showSectionLbl:before,
+.messageArena .panelHeader .btnClose:before,
+.messageArena .panelHeader .legends label:before,
+.messageArena .messageBox .mItem:before,
+.panelChatArea .control-bar .findCheckLbl:before,
+.panelChatArea .membersInfo .infoSection header a:before,
+.panelChatArea .findIcon,
+.panelChatArea .searchIcon,
+.detailPage section .heading .filterArea a:before,
+.filterPanel .closeLink:before,
+.wizardBody .panel-heading >span:before,
+.testReportPanel .caseName>a,
+.testReportPanel .modalHeader .cancel-x:before {
+    background-image: url(../img/orange/sprite-codeArena.png);
+}
+.codeArea .shareLink .dropdown-menu,
+.panelCodeEditor .panel-body .settingsPanel {
+    background-image: url(../img/orange/popup-bg.png);
+}
+.anon-header .navbar .navbar-brand,
+.header .navbar-brand,
+.header .navIcons>li>.icon:before,
+.header .pastNoti,
+.userInfo .notification,
+.userInfo .arrow,
+.header .navIcons .themePanel .closeBtn:before,
+.header .navIcons .themePanel .themeItem .themeRadio:checked ~ .themeLbl:before {
+    background-image: url(../img/sprite-new-header.png);
+}
+.anon-header,
+.header {
+    background-image: url(../img/black-header.png);
+}
+.panelContestPlan .iconsWrapper .viewLbl,
+.calendar .fc-button-prev .fc-text-arrow,
+.calendar .fc-button-next .fc-text-arrow,
+.listView .listHeader .btnCtrl {
+    background-image: url(../img/orange/sprite-contestPlan.png);
+}
+.panelCodeProblem .panel-heading > .collapseIcon:before,
+.panelCodeEditor .panel-heading > .collapseIcon:before,
+.detailPage section .heading .expandIcon,
+.detailPage .table>tbody>tr>td .icon,
+.detailPage .table>thead>tr>th .sort,
+.detailPage .leaderboardWrapper .heading .viewFilter .showLBLbl:before,
+.filterPanel .contentWrapper .dropdown .arrow,
+.detailPage section .table>thead>tr>th .arrow,
+.modal-body .table>thead>tr>th .arrow{
+    background-image: url(../img/orange/sprite-room-summary.png);
+}
+.filterPanel.qtip-default,
+.filterPanel.largeSize.qtip-default {
+    background-image: url(../img/orange/filter-bg.png);
+    background-repeat: no-repeat;
+}
+.panelCodeEditor .testPanel .btnRow .loadIcon {
+    background-image: url(../img/orange/loadinfo.net.gif);
+    background-repeat: no-repeat;
+}
+.panelCodeEditor .testPanel header .runIcon:before,
+.panelCodeEditor .testPanel header .deleteIcon:before,
+.testReportPanel .correctInfo .dot,
+.testReportPanel .infoBar .time:before,
+.testReportPanel .infoBar .memory:before,
+.reportQtip.qtip-default:after {
+    background-image: url(../img/orange/sprite-test.png);
+    background-repeat: no-repeat;
+}
+.modal .modal-content .wizardHeader .cancel:before,
+.wizardBody .nav>li>span:before,
+.wizardBody .nav .active:before,
+.wizardBody .pager .btn:before,
+.wizardBody .dropdown-toggle:before,
+.wizardBody .numberInput>div>a:before,
+.wizardBody .checkboxLbl:before,
+.step-2 .logoUpload .thumbnail {
+    background-image: url(../img/orange/sprite-wizard.png);
+    background-repeat: no-repeat;
+}
+/***************header style*/
+.userInfo .rating-none {
+    color: #fff;
+}
+.header .navIcons .themePanel {
+    border-color: #fff;
+    border-color: rgba(255,255,255,0.1);
+    background: #151718;
+    background: rgba(21,23,24,0.98);
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+}
+.header .navIcons .themePanel:before {
+    color: #fff;
+    color: rgba(255,255,255,0.1);
+}
+.header .navIcons .themePanel:after {
+    color: #151718;
+}
+.header .navIcons .themePanel h4,
+.header .navIcons .themePanel .themeItem:last-child {
+    border-color: #ff8a00;
+    border-color: rgba(255,138,0,0.41);
+    color: #fff;
+}
+.header .navIcons .themePanel .themeItem {
+    border-color: #7b612e;
+    color: #fff;
+}
+.header .navIcons .themePanel .btn {
+    background: #ff8a00;
+}
+.header .navIcons .themePanel .themeItem .themeRadio:checked ~ .themeLbl {
+    color: #ff8a00;
+}
+
+/*******************login page*/
+
+/* topcoder account login part */
+.hero .form .tcAccountBox input {
+    background: #fff;
+}
+.hero .form .loginBox .data input[type="text"],
+.hero .form .loginBox .data input[type="password"] {
+    color: #333;
+    border-color: #e7e7e7;
+}
+.hero .form .tcAccountBox .btn-lg,
+.hero .form .social .btn-lg,
+.codeArea .socialLinks .btn-lg,
+.codeArea .btnBack,
+.detailPage .titleBar .btnBack {
+    background: #ff8a00;
+}
+.hero .form .tcAccountBox .btn-lg{
+    line-height: 16px;
+}
+.hero .form .tcAccountBox .btn-lg:hover {
+    background: #ffa133;
+}
+.hero .form .social .btn-facebook, .codeArea .socialLinks .btn-facebook {background-color:#45619d;}
+.hero .form .social .btn-facebook:hover,.codeArea .socialLinks .btn-facebook:hover {background-color:#4D69BB;}
+.hero .form .social .btn-twitter, .codeArea .socialLinks .btn-twitter{background-color:#55acee;}
+.hero .form .social .btn-twitter:hover,.codeArea .socialLinks .btn-twitter:hover {background-color:#62CAF9;}
+.hero .form .social .btn-google,.codeArea .socialLinks .btn-google {background-color:#dd4b39;}
+.hero .form .social .btn-google:hover,.codeArea .socialLinks .btn-google:hover {background-color:#e05d4d;}
+.hero .form .social .btn-github,.codeArea .socialLinks .btn-github{background-color: #444;}
+.hero .form .social .btn-github:hover,.codeArea .socialLinks .btn-github:hover {background-color: #515151;}
+/* custom checkbox */
+.hero .form .tcAccountBox .rememberCheckboxLabel {
+    background: url(../img/orange/checkbox.png) 0 0 no-repeat;
+}
+
+/* social media login part */
+.hero .signup .separator{
+    border-color: #e7e7e7;
+}
+.hero .loginBox {
+    border-color: #e7e7e7;
+}
+.hero .loginBox header {
+    background: #f0f0f0;
+    color: #656565;
+}
+.hero .loginBox header>span {
+    color: #ff8a00;
+    color: rgba(255,138,0,0.3);
+}
+.hero .loginBox .tcAccountBox,
+.hero .loginBox .social>div {
+    background: #fffffd;
+}
+.hero .registerRow {
+    background: #f0f0f0;
+    border: none;
+}
+.hero .registerRow a {
+    color: #ff8a00;
+}
+/* login footer part */
+.hero .loginBox footer {
+    border-color: #e7e7e7;
+    background: #fff;
+    height: 166px;
+    padding: 16px 17px;
+}
+.hero .loginBox footer .sponsorLogo {
+    background: url(../img/orange/company_logo.png) 0 0 no-repeat;
+}
+
+/*************** basic style of page */
+/* basical stucture, title, breadcrumb and connection */
+.dashboard .definition .item span,
+.tcTime>span {
+    color: #fff;/*#ff8a00*/
+}
+.codeArea .shareLink > ul > li > a:hover {color: #ff8a00;}
+.codeArea .shareLink > ul > .open > a {color: #ff8a00;}
+.codeArea .shareLink > ul > .open > a:after {background-position: -25px 0;}
+
+.codeArea .shareLink .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    background-color: #ff8a00;
+}
+/*********** footer style */
+footer{
+    background-color:#fff;
+}
+footer .line {
+    border-color: #ff8a00;
+}
+footer .right .sponsorLogo {
+    background: url(../img/orange/company_logo_small.png) 100% 100% no-repeat;
+}
+footer .left>span {
+    color: #ff8a00;
+}
+
+/********************* modal */
+.modal .modal-content {
+    background: #fff;
+    border-color: #e7e7e7;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.modal .modal-content .modal-header {
+    background: #f0f0f0;
+    color: #656565;
+}
+.modal .modal-content .modal-body {
+    color: #333;
+}
+.modal .modal-content .btn {
+     line-height: 27px;
+     background: #ff8a00;
+}
+.modal .modal-content .btn:hover {
+    background: #ffa133;
+}
+.modal .modal-content .btn:focus,
+.modal .modal-content .btn:active:focus {
+    outline-color: #ffa133;
+}
+.modal .modal-content .modal-footer {
+    border-top: 1px solid #ffe6c7;
+}
+.testReportPanel .modalFooter {
+    border-top: 1px solid #ffe6c7;
+}
+
+/*contest creation wizard modal*/
+.modal-lg .modal-content {
+    border-color: #e7e7e7
+}
+.modal .modal-content .wizardHeader {
+    background: #f0f0f0;
+    border: 1px solid #e7e7e7;
+    color: #656565;
+    font-weight: 600;
+}
+.modal .modal-content .wizardBody {
+    color: #656565;
+}
+.modal .wizardBody .btn {
+    background: #ff8a00;
+}
+.wizardBody .nav>li {
+    color: #656565;
+    background: #f0f0f0;
+    border: 1px solid #e7e7e7;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.wizardBody .nav .item-1{
+    border-left-width: 1px;
+}
+.wizardBody .nav .item-4{
+    border-right-width: 1px;
+}
+.wizardBody .nav .active {
+    color: #fff;
+    background: #ff8a00;
+    border-width: 0;
+}
+.wizardBody .tabContent {
+    border-color: #e7e7e7;
+}
+.wizardBody .errorInfo {
+    color: #ff0f00;
+}
+.wizardBody .inputBorder,
+.wizardBody .dropdown-menu,
+.wizardBody .numberInput>div,
+.wizardBody .radioLbl:before,
+.wizardBody .selectorMenu ul:first-child,
+.step-3 .phaseSchedule hr {
+    border-color: #e7e7e7;
+}
+.wizardBody .error .inputBorder,
+.wizardBody .error .radioLbl:before {
+    border-color: #ff0f00;
+}
+.wizardBody .inputBorder>input {
+    background: transparent;
+    border-width: 0;
+    color: #656565;
+}
+.wizardBody .inputBorder>input[name="startDate"] {
+    color: #656565;
+}
+.wizardBody .dropdown-toggle {
+    color: #656565;
+}
+.wizardBody .calendar .selectedDate .fc-day-number:before {
+    background: #656565;
+    color: #fff;
+}
+.wizardBody .methodDD .dropdown-menu .selectedLi,
+.wizardBody .dropdown-menu .selectedLi {
+    background: #656565;
+    color: #fff;
+}
+.wizardBody .panel-heading {
+    background: #f0f0f0;
+    color: #656565;
+    border: 1px solid #e7e7e7;
+}
+.wizardBody .panel-body {
+    border-color: #e7e7e7
+}
+.wizardBody .info {
+    color: #636d70;
+}
+.step-1 .calendarSec {
+    background: #f7f7f7;
+}
+.wizardBody .startTime .dropdown-menu {
+    background: #f7f7f7;
+}
+.wizardBody .selectorMenu,
+.wizardBody .methodDD .dropdown-menu {
+    background: #fff;
+}
+.step-4 span {
+    font-weight: 600;
+}
+.step-4 .leftPart h3 {
+    background: #f3f3f3;
+}
+.wizardBody .step-4 .leftPart p {
+    border-color: #ffe8cc;
+    border-color: rgba(255,138,0,0.2);
+}
+.wizardBody .step-4 .leftPart .roomAssignDiv {
+    height: 46px;
+    border-bottom: 1px solid rgba(255,138,0,0.2);
+}
+.wizardBody .step-4 .leftPart label {
+    color: #5b6467;
+}
+.wizardBody .step-4 .leftPart .roomAssign label {
+    color: #4c5456;
+}
+.wizardBody .step-4 .rightPart label {
+    color: #636d70;
+}
+.step-4 .rightPart>div {
+    border-color: #ffe8cc;
+    border-color: rgba(255,138,0,0.2);
+}
+
+.notificationPopup {
+    color: #3BA35E;
+}
+.notificationPopup p {
+    color: #B93C42;
+}
+.notificationPopup p span {
+    color: #707070;
+}
+
+/* ng-scrollbar style */
+.body .ngsb-wrap .ngsb-scrollbar .ngsb-thumb-pos .ngsb-thumb {
+    background: #ff8a00;
+}
+/*********************  widgets */
+/* active contests widget */
+.panel-custom {
+    background: #fff;
+    border-color: #e7e7e7;
+}
+.panel-custom .panel-heading {
+    background: #f0f0f0;
+    color: #656565;
+    border-bottom: 2px solid #e7e7e7;
+}
+.panel-custom .panel-body {
+    color: #687376;
+}
+.panel-custom .mainContent .btn {
+    line-height: 27px;
+    background: #ff8a00;
+}
+.panel-custom .mainContent .btn:hover {
+    background: #ffa133;
+}
+/* tabs */
+.panel-custom .schedulePanel,
+.panel-custom .statusPanel,
+.panel-custom .roomsPanel,
+.panel-custom .summaryPanel {
+    border-color: #ff8a00;
+    color: #333;
+}
+.panel-custom .statusPanel .rightSide {
+    border-color: #e7e7e7;
+}
+/* paginator part */
+.panel-custom .paginator {
+    border-color: #e7e7e7;
+}
+
+.panel-custom .panel-body .textActive {
+    color: #ff8a00;
+}
+.panel-custom .panel-body .textWhite {
+    color: #333;
+}
+.panel-custom .panel-body .textRed {
+    color: #ff0000;
+}
+
+/* problem area widget */
+.panelCodeProblem .panel-heading {
+    background: #f0f0f0;
+}
+.panelCodeEditor .panel-heading {
+    background: #f0f0f0;
+}
+.panelCodeProblem .panel-heading > .collapseIcon:before,
+.panelCodeEditor .panel-heading > .collapseIcon:before {
+    opacity: 0.5;
+}
+.panelCodeProblem .panel-body {
+    border-color: #e7e7e7;
+}
+.panelCodeEditor .panel-body {
+    border-color:#e7e7e7;
+}
+
+/* code editor widget */
+.panelCodeEditor .actionIcons > .link:hover {color: #687376;}
+.panelCodeEditor .toolBar .actionIcons {
+    color: #ff8a00;
+}
+.panelCodeEditor .toolBar .middlePart .findInput {
+    background: #fff;
+}
+.panelCodeEditor .toolBar .middlePart .gotoInput input {
+    background: #fff;
+}
+.panelCodeEditor .toolBar .middlePart .gotoInput .arrow {
+    padding: 15px 14px;
+    background: #fff;
+}
+.panelCodeEditor .toolBar .middlePart .gotoInput .arrow:hover {
+    background: #f0f0f0;
+}
+.panelCodeEditor .toolBar .middlePart .arrow:before {
+    left: 10px;
+}
+.panelCodeEditor .panel-body .toolBar {
+    background: #e7e7e7;
+    border-width: 0;
+}
+.panelCodeEditor .toolBar .settingsToggle {
+    background: #fff;
+}
+.panelCodeEditor .settingsPanel .settingDropDown .dropdown-toggle {
+    background-image: url(../img/orange/select.png);
+    background-color: #fff;
+    border-color: #e7e7e7;
+    color: #333;
+}
+.panelCodeEditor .settingsPanel .settingDropDown .dropdown-menu>li>.current {
+    background: #999;
+    color: #fff;
+}
+.panelCodeEditor .settingsPanel .lineNumberRow .lineNumLbl:before {
+    border-color: #e7e7e7;
+}
+.panelCodeEditor .settingsPanel .lineNumRadio:checked ~ .lineNumLbl:before,
+.wizardBody .radioInput:checked ~ .radioLbl:before {
+    box-shadow: 0 0 0 4px #fff inset, 0 0 0 10px #ff8a00 inset;
+}
+.panelCodeEditor .settingsPanel .btn-settings {
+    background: #ff8a00;
+}
+.panelCodeEditor .panel-body .toolBar .rightPart {
+    color: #333;
+}
+.panelCodeEditor .toolBar .active .testToggle {
+    color: #333;
+    background: #fff;
+    border-color: #e7e7e7;
+}
+.panelCodeEditor .toolBar .testToggle:hover {color: #333;}
+.panelCodeEditor .toolBar .testPanel {
+    background: #fff;
+    border-color: #e7e7e7;
+}
+.panelCodeEditor .testPanel header {
+    border: 1px solid #e7e7e7;
+    background: #f0f0f0;
+    color: #333;
+}
+.panelCodeEditor .testPanel header .runIcon,
+.panelCodeEditor .testPanel header .deleteIcon {
+    color: #ff8a00;
+}
+.panelCodeEditor .testPanel header .nameInput {
+    background: #fff;
+    color: #333;
+    font-weight: 400;
+}
+.panelCodeEditor .testPanel header .nameInput::-webkit-input-placeholder{
+    color: #333;
+}
+.panelCodeEditor .testPanel header .nameInput:-moz-placeholder{
+    color: #333;
+}
+.panelCodeEditor .testPanel header .nameInput::-moz-placeholder{
+    color: #333;
+}
+.panelCodeEditor .testPanel header .nameInput:-ms-input-placeholder{
+    color: #333;
+}
+.panelCodeEditor .testPanel .btn{
+    background: #ff8a00;
+}
+.panelCodeEditor .testPanel .content input[type="text"] {
+    background: #fff;
+}
+.panelCodeEditor .testPanel .content .inputBorder {
+    border-color: #e7e7e7;
+}
+.panelCodeEditor .settingsPanel .btn-settings:hover,
+.panelCodeEditor .testPanel .content .btn:hover,
+.panelCodeEditor .testPanel .btnRow .btn:hover {
+    background: #ffa133;
+}
+.panelCodeEditor .toolBar .active .testPanel {z-index: 20;}
+.panelCodeEditor .paddingRow {background: #fff;}
+.panelCodeEditor .paddingRow:before {
+    background: #e7e7e7;
+}
+.panelCodeEditor .paddingRow:after {
+    background: #e7e7e7;
+}
+.panelCodeEditor .panel-body .errorBar {
+    background: #e7e7e7;
+}
+/* resizer */
+/*hover style of resizer*/
+/*#resizer:hover {
+    background: #1f444e;
+}*/
+.panelCodeEditor .testReportPanel,
+.reportQtip.qtip-default {
+    border-color: #e7e7e7;
+    background: #fff;
+}
+.testReportPanel .modalHeader>span {
+    color: #636d70;
+}
+.testReportPanel .infoBar {
+    background: #F0F0F0;
+    color: #333;
+}
+.testReportPanel .infoBar td+td {
+    border-color: #e7e7e7;
+}
+.testReportPanel .correctInfo {
+    color: #047A17;
+}
+.testReportPanel .correctInfo.wrong {
+    color: #ff0000;
+}
+.testReportPanel .correctInfo.custom {
+    color: #7e7e7e;
+}
+.reportQtip.qtip-default {
+    color: #333;
+    font-weight: 400;
+}
+.testReportPanel .modalFooter .btn {
+    background: #ff8a00;
+}
+/******************* count down widget */
+.panelCountDown {
+    background: #fff;
+    border-color: #ff8a00;
+}
+/******************* contest status widget */
+.panelContestStat .panel-heading {
+    background: #f0f0f0;
+    border-bottom-width: 1px;
+    border-left: 1px solid #e7e7e7;
+}
+.panelContestStat .panel-body {
+    border-color: #e7e7e7;
+    background: #fffffd;
+}
+.panelContestStat .panel-body .overview {
+    border-bottom: 1px solid #ffe6c7;
+}
+.panelContestStat .breadcrumbHead {
+    padding: 9px 0 7px 28px;
+}
+.panelContestStat .breadcrumbHead .breadcrumb .active {
+    color: #ff890c;
+    opacity: 1;
+}
+.panelContestStat .breadcrumbHead .breadcrumb li {
+    padding-left: 13px;
+    color: #656565;
+    opacity: 0.48;
+}
+.panelContestStat .breadcrumbHead .breadcrumb li:last-child {padding-right: 0; }
+.panelContestStat .breadcrumbHead .breadcrumb li:before {
+    opacity: 0.625;
+    height: 9px;
+    left: 0;
+    top: 7px;
+    padding: 0;
+    background-position: 0 -82px;
+}
+.panelContestStat .breadcrumbHead .breadcrumb .active:before {
+    background-position: -9px -82px;
+}
+.panelContestStat .phaseDetails table td{
+    border-bottom: 1px solid #ffe6c7;
+}
+.panelContestStat .phaseDetails table th{
+    border-bottom: 1px solid #ffe6c7;
+}
+.panelContestStat .panel-body a {
+    color: #ff8a00;
+}
+.panelContestStat .panel-body a:hover {
+    color: #ff8a00;
+}
+/* profile overview and important messages widget */
+.panelOverview {
+    background: transparent;
+}
+.panelOverview .panel-heading {
+    background: #f0f0f0;
+    border-bottom-width: 1px;
+    border: 1px solid #e7e7e7;
+}
+.panelOverview .panel-heading.active {
+    background: #ff8a00;
+    color: #fff;
+    border-width: 0;
+}
+.panelOverview .panel-heading .showSectionRadio:checked~.showSectionLbl:before {
+    background-position: -50px -20px;
+}
+.panelOverview .panel-body {
+    border-color: #e7e7e7;
+}
+.panelOverview .panel-heading.active + .panel-body {
+    margin-top: 0;
+}
+.panelOverview .panel-body .contentWrapper {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-bottom-width: 0;
+    height: 230px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+.panelOverview>section:last-child .panel-body .contentWrapper {
+    height: 229px;
+    border-bottom-width: 1px;
+}
+.panelOverview .overviewAndMessage .profile p {
+    color: #333;
+}
+.panelOverview .overviewAndMessage .profile p label {
+    color: #687376;
+}
+.panelOverview .overviewAndMessage .messagesBox td {
+    color: #333;
+    border-color: #ffe9cf;
+}
+.panelOverview .overviewAndMessage .messagesBox .date {
+    color: #687376;
+}
+
+/* contest plan widget */
+.panelContestPlan {
+    border-color: #e7e7e7;
+    background: #fff;
+}
+.panelContestPlan .panel-heading {
+    color: #656565;
+}
+/*for calendar and list view*/
+.calendar .fc-header-title h2,
+.listView .listHeader h2 {
+    color: #687376;
+}
+.calendar .fc-border-separate tr.fc-last th,
+.wizardBody .step-1 .calendarSec .startTime {
+    border-color: #ffe9cf;
+}
+.calendar .fc-border-separate thead .fc-day-header {
+    color: #687376;
+}
+.calendar .fc-header .fc-button-month {
+    color: #ff8a00;
+}
+.calendarView .fc-event{
+    color: #333;
+}
+.listView .listHeader {
+    border-bottom: 1px solid #ffe6c9;
+}
+.listView .eventsContent .table>tbody>tr>td {
+    border-color: #ffe6c9;
+}
+.panelContestPlan .ngsb-wrap .ngsb-scrollbar .ngsb-thumb-pos .ngsb-thumb {
+    background: #e7e7e7;
+}
+
+/* style of message arena */
+.body .messageArena {
+    background-color: rgba(21,23,24,0.98);
+    border-color: rgba(255,255,255,0.1);
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+}
+.messageArena:after {
+    color: rgba(21,23,24,0.98);
+}
+.messageArena .qtip-content {
+    color: #fff;
+}
+.messageArena .panelHeader {
+    border-bottom: 1px solid #784911;
+}
+.messageArena .messageBox .mItem {
+    border-bottom: 1px solid #7B612E;
+}
+.pastNotifications .messageBox .mItem .bottomRow {
+    color: #707374;
+}
+.messageArena a {
+    color: #ff8a00;
+}
+.pastNotifications .viewMore {
+    border-color: #784911;
+    color: #ff8a00;
+}
+/*room summary widget in contest page*/
+.panelSummary {
+    border-color: #e7e7e7;
+}
+.panelSummary .panel-heading {
+    background: #f0f0f0;
+}
+.panelSummary .panel-body {
+    background: #fffffd;
+    color: #636d70;
+}
+.panelSummary .panel-body .summaryWrapper {
+    border-color: #ff8a00;
+}
+.panelSummary .summaryWrapper .sumDiv:before {
+    background-position: -136px -44px;
+}
+.panelSummary .mainContent .detailLink {
+    color: #656565;
+}
+.panelSummary .mainContent .detailLink:hover {
+    color: #ff8a00;
+}
+/* Chat Area Widget */
+.panelChatArea .panel-heading {
+    background-color: #f0f0f0;
+    border-bottom-width: 1px;
+}
+.panelChatArea .lobbyDropdown .dropdown-toggle,
+.panelChatArea .methodDropdown .dropdown-toggle,
+.panelChatArea .memberDropdown .disableSelect,
+.panelChatArea .memberDropdown .dropdown-toggle {
+    background-image: url(../img/orange/select.png);
+    background-color: #fff;
+}
+.panelChatArea .lobbyDropdown .dropdown-toggle,
+.panelChatArea .methodDropdown .dropdown-toggle {
+    color: #333;
+}
+.panelChatArea .lobbyDropdown .dropdown-toggle:hover,
+.panelChatArea .methodDropdown .dropdown-toggle:hover,
+.panelChatArea .memberDropdown .dropdown-toggle:hover {
+    color: inherit;
+}
+.panelChatArea .membersInfo{
+    border-right: 1px solid #e7e7e7;
+}
+.panelChatArea .membersInfo .infoSection header a{
+    background-color: #e7e7e7;
+}
+.panelChatArea .membersInfo .users .current {
+    background: #ffe8cc;
+    background: rgba(255,138,0,0.2);
+}
+.panelChatArea .content {
+    background: #f5f8fa;
+}
+.panelChatArea .content .chatBoard .general{
+    color: #333;
+}
+.panelChatArea .content .chatBoard .toMe{
+    background-color: #a90909;
+    color: #fff;
+}
+.panelChatArea .methodDropdown .dropdown-menu{
+    background-color: #fff;
+}
+.panelChatArea .memberDropdown .dropdown-menu{
+    background-color: #fff;
+}
+.panelChatArea .methodDropdown .dropdown-menu li a{
+    color: #333;
+}
+.panelChatArea .methodDropdown .dropdown-menu li a:hover{
+    color: #666;
+}
+.panelChatArea .chatInput {
+    background: #fff;
+    color: #333;
+}
+.panelChatArea .chatInput input::-webkit-input-placeholder{
+    color: #333;
+}
+.panelChatArea .chatInput input:-moz-placeholder{
+    color: #333;
+}
+.panelChatArea .chatInput input::-moz-placeholder{
+    color: #333;
+}
+.panelChatArea .chatInput input:-ms-input-placeholder{
+    color: #333;
+}
+.panelChatArea .ngsb-wrap .ngsb-scrollbar .ngsb-thumb-pos .ngsb-thumb {
+    background: #e7e7e7;
+}
+
+/** Modal style **/
+.chatWidget-modal-header,
+.chatWidget-modal-footer{
+    background-color: #f0f0f0;
+}
+.chatWidget-modal-body{
+    background-color: #fff;
+}
+.chatWidget-modal-button{
+    background-color: #ff8a00;
+}
+.chatWidget-modal-button:focus,
+.chatWidget-modal-button:active:focus {
+    outline-color: #ffa133;
+}
+
+/* contest summary page --> uesr.contest.detail.html*/
+.detailPage .panelSummary .panel-body .leftSec {
+    border-right: 1px solid #dededd;
+}
+/* challengers section */
+.detailPage section h3 {
+    color: #656565;
+}
+.detailPage section .heading .filterArea>a {
+    color: #656565;
+}
+.filterPanel .closeLink {
+    color: #333;
+}
+.filterPanel .contentWrapper label {
+    color: #333;
+}
+.filterPanel .contentWrapper .dropdown,
+.filterPanel .contentWrapper .filterInput {
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+.filterPanel .contentWrapper .filterInput,
+.filterPanel .contentWrapper .dropdown-toggle {
+    color: #333;
+}
+.filterPanel .btnWrapper {
+    border-top: 1px solid #e7e7e7;
+}
+.filterPanel .btnWrapper .btnFilter {
+    background: #ff8a00;
+}
+.detailPage .leaderboardWrapper .heading .viewFilter div {
+    color: #656565;
+}
+
+/* expand/collapse action */
+.detailPage .panel-body section.expand{
+    background: #fff;
+}
+/*common style of table in detail page */
+.detailPage .table>thead:first-child>tr:first-child>th {
+    background: #e7e7e7;
+    color: #636d70;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    border-top: 8px solid #fff;
+    border-bottom-width: 3px;
+    border-color: #fff;
+}
+.detailPage .table>tbody>tr:first-child>td {
+    border-top: 1px solid #ffe6c7;
+}
+.detailPage .table>tbody>tr>td {
+    color: #333;
+    border-bottom: 1px solid #ffe6c7;
+}
+.detailPage .table>tbody>tr>td>.rating {
+    color: #656565;
+}
+/**** Default language ****/
+.detailPage .leaderboardWrapper .colorSubmittedDefault {
+    color: #ac4141;
+}
+.detailPage .leaderboardWrapper .colorChallengedDefault {
+    color: #ac4141;
+    font-style: italic!important;
+}
+.detailPage .leaderboardWrapper .colorPassedDefault {
+    color: #ac4141;
+}
+.detailPage .leaderboardWrapper .colorFailedDefault {
+    color: #ac4141;
+    font-style: italic!important;
+}
+/**** Java language ****/
+.detailPage .leaderboardWrapper .colorSubmittedJava {
+    color: #00a900;
+}
+.detailPage .leaderboardWrapper .colorChallengedJava {
+    color: #00a900;
+    font-style: italic!important;
+}
+.detailPage .leaderboardWrapper .colorPassedJava {
+    color: #00a900;
+}
+.detailPage .leaderboardWrapper .colorFailedJava {
+    color: rgb(255, 0, 51);
+    font-style: italic!important;
+}
+/**** CPP language ****/
+.detailPage .leaderboardWrapper .colorSubmittedCpp {
+    color: rgb(255, 155, 153);
+}
+.detailPage .leaderboardWrapper .colorChallengedCpp {
+    color: rgb(255, 155, 153);
+    font-style: italic!important;
+}
+.detailPage .leaderboardWrapper .colorPassedCpp {
+    color: rgb(255, 155, 153);
+}
+.detailPage .leaderboardWrapper .colorFailedCpp {
+    color: rgb(255, 0, 51);
+    font-style: italic!important;
+}
+/**** C# language ****/
+.detailPage .leaderboardWrapper .colorSubmittedCsharp {
+    color: rgb(102, 102, 255);
+}
+.detailPage .leaderboardWrapper .colorChallengedCsharp {
+    color: rgb(102, 102, 255);
+    font-style: italic!important;
+}
+.detailPage .leaderboardWrapper .colorPassedCsharp {
+    color: rgb(102, 102, 255);
+}
+.detailPage .leaderboardWrapper .colorFailedCsharp {
+    color: rgb(255, 0, 51);
+    font-style: italic!important;
+}/**** VB language ****/
+.detailPage .leaderboardWrapper .colorSubmittedVB {
+    color: rgb(129, 217, 255);
+}
+.detailPage .leaderboardWrapper .colorChallengedVB {
+    color: rgb(129, 217, 255);
+    font-style: italic!important;
+}
+.detailPage .leaderboardWrapper .colorPassedVB {
+    color: rgb(129, 217, 255);
+}
+.detailPage .leaderboardWrapper .colorFailedVB {
+    color: rgb(255, 0, 51);
+    font-style: italic!important;
+}
+/**** Python language ****/
+.detailPage .leaderboardWrapper .colorSubmittedPython {
+    color: rgb(255, 102, 255);
+}
+.detailPage .leaderboardWrapper .colorChallengedPython {
+    color: rgb(255, 102, 255);
+    font-style: italic!important;
+}
+.detailPage .leaderboardWrapper .colorPassedPython {
+    color: rgb(255, 102, 255);
+}
+.detailPage .leaderboardWrapper .colorFailedPython {
+    color: rgb(255, 0, 51);
+    font-style: italic!important;
+}
+
+.detailPage .leaderboardWrapper .colorPending {
+    color: #00a900;
+}
+.detailPage .leaderboardWrapper .colorCompiled {
+    color: #f99800;
+}
+.detailPage .leaderboardWrapper .colorOpened {
+    color: #ff8a00;
+}
+.detailPage .leaderboardWrapper .colorUnopened {
+    color: #5e676a;
+}
+
+.filterPanel .contentWrapper .filterInput:focus {
+    color: #333;
+}
+.detailPage .ngsb-wrap .ngsb-scrollbar .ngsb-thumb-pos .ngsb-thumb {
+    background: #e7e7e7;
+}
+
+/*bootstrap small devices tablets*/
+@media only screen and (max-width: 991px) {
+    .header .navIcons > li {
+        background-image: url(../img/black-header.png);
+    }
+    .header .timeItem,
+    .header .navbar-right .userInfo {
+        background-image: url(../img/black-header.png);
+    }
+}
+/* boostrap extra small devices */
+@media only screen and (max-width: 767px) {
+    .panel-custom .tabs .altNav .dropdown-toggle {
+        color: #ff8a00;
+    }
+    .panel-custom .tabs .altNav .dropdown-toggle:hover,
+    .panel-custom .tabs .altNav .open a:hover {
+        background: #ff8a00;
+    }
+    .hero .loginBox footer .sponsorLogo {
+        background-image: url(../img/orange/company_logo_small.png);
+    }
+}
+/* special sizes which widget will overflow */
+@media only screen and (max-width: 668px) {
+    .panelChatArea .membersInfo{
+        border-bottom: 1px solid #e7e7e7;
+    }
+}
+@media only screen and (max-width: 421px) {
+    .panelContestStat .breadcrumbHead {
+        white-space: normal;
+        height: 63px;
+    }
+}
+
+/* tooltip */
+.body .tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #ff8a00;
+}
+.body .tooltip-inner{
+    background-color: #ff8a00;
+}
+
+.chatWidget-modal-header .modal-title{
+    line-height: 24px;
+}
+.roomsDiv a {
+    color: #656565;
+}
+.roomsDiv a:hover {
+    color: #ff8a00;
+}
+.coder-history-span {
+    border-color: #ffe6c7;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.registration-modal-body .title{
+    padding-top: 10px;
+}
+.registration-modal-body .questionDiv{
+    border: 1px solid;
+    padding: 5px;
+    margin-left: 36px;
+    margin-right: 18px;
+    border-color: #ffe6c7;
+    min-height: 250px;
+}
+.registration-modal-body .surveyDiv .index{
+    margin:5px 5px 5px 20px !important;
+}
+.registration-modal-body .questionTitle{
+    padding-top: 20px;
+}
+.registration-modal-body .surveyDiv .questionTextDiv{
+    border: 1px solid;
+    border-color: #ffe6c7;
+    margin-right: 18px;
+    margin-left: 18px;
+    min-height: 80px;
+}
+.step-1 .information {
+    width: 486px;
+}
+.step-4 .rightPart {
+    width: 522px;
+}
+.wizardBody .tabContent {
+    height: 371px;
+}
+.wizardBody .langSelectorDivWidth{
+    width: 0;
+}
+/* active user and leadearboard */
+.activeUsers .refreshData {
+    background: url(../img/loading-o.png) 50% 50% no-repeat
+}
+.activeUsers .activeUserTable th,.leaderBoardTable thead th {
+    color: #757d80;
+    border-bottom: 1px solid #FFE6C7;
+    background-color: #e7e7e7
+}
+.activeUsers .activeUserTable.heading {
+    margin-bottom: 3px
+}
+.activeUsers .activeUserTable.heading th,.activeUsers .activeUserTable.heading tr {
+    border-bottom: 0
+}
+.activeUsers .activeUserList {
+    border-top: 1px solid #FFE6C7
+}
+.activeUsers .activeUserTable thead .colHandle,.activeUsers .activeUserTable thead .colR {
+    background-color: #e7e7e7
+}
+.leaderBoardTable.heading thead th{
+    border-bottom: none;
+}
+.leaderBoardTable  td,
+.activeUserTable  td{
+    border-bottom: 1px solid #FFE6C7;
+    color: #4e4e4e;
+}
+.leaderboard .leaderBoardTable.heading{
+    margin-bottom: 3px;
+}
+.leaderboard .leadarboardList{
+    border-top: 1px solid #FFE6C7;
+}
+.leaderboard .rounds .lbl{
+    color: #5E676A;
+}
+.customDropdown .dropdown-toggle{
+    color: #333;
+    border: 1px solid #C3C3C3;
+    background-image: url(../img/orange/select.png);
+}
+.leadarboardList .ngsb-scrollbar,
+.activeUserList .ngsb-scrollbar{
+    background: #fff;
+}

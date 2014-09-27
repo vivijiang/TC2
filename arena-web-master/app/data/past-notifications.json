@@ -1,0 +1,83 @@
+{
+    "preload":
+    [
+        {
+            "message": "Past notification 1",
+            "type": "green",
+            "date": 1410138226099
+        },
+        {
+            "message": "Past notification 2",
+            "type": "green",
+            "date": 1410138326099
+        },
+        {
+            "message": "Past notification 3",
+            "type": "green",
+            "date": 1410138426099
+        },
+        {
+            "message": "Past notification 4",
+            "type": "green",
+            "date": 1410138526099
+        },
+        {
+            "message": "Past notification 5",
+            "type": "green",
+            "date": 1410138626099
+        },
+        {
+            "message": "Past notification 6",
+            "type": "green",
+            "date": 1410138726099
+        },
+        {
+            "message": "Past notification 7",
+            "type": "green",
+            "date": 1410138826099
+        },
+        {
+            "message": "Past notification 8",
+            "type": "green",
+            "date": 1410138926099
+        },
+        {
+            "message": "Past notification 9",
+            "type": "green",
+            "date": 1410139026099
+        },
+        {
+            "message": "Past notification 10",
+            "type": "green",
+            "date": 1410139126099
+        },
+        {
+            "message": "Past notification 11",
+            "type": "green",
+            "date": 1410139226099
+        },
+        {
+            "message": "Past notification 12",
+            "type": "green",
+            "date": 1410139326099
+        },
+        {
+            "message": "Past notification 13",
+            "type": "green",
+            "date": 1410139426099
+        },
+        {
+            "message": "Past notification 14",
+            "type": "green",
+            "date": 1410139526099
+        },
+        {
+            "message": "Past notification 15",
+            "type": "green",
+            "date": 1410139626099
+        }
+    ],
+    "newMessages":
+    [
+    ]
+}
