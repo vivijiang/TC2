@@ -31,6 +31,83 @@ h2 {
     font-size: 2.8rem;
 }
 
+h3{
+    margin-top: 4rem;
+}
+
+.page-title {
+    background-color: #eee;
+    box-shadow: inset 0 3px 5px 0 rgba(207,207,207,0.8);
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin: 1rem 0 5rem;
+    padding: 1rem 0;
+}
+
+.page-title .container {
+    padding-left: 8.2rem;
+    position: relative;
+}
+
+.page-flag {
+    position: absolute;
+    left: 0;
+    top: -1rem;
+}
+
+.page-flag.code {
+    background: transparent url(../image/page-flag.png) no-repeat 0 0;
+    height: 87px;
+    width: 60px;
+}
+
+.lession-title {
+    border-bottom: 1px solid #DEDEDE;
+    position: relative;
+
+    .pagination {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .pagination > li > a,
+    .pagination > li > span {
+        color: #5F5F5F;
+        border-radius: 100%;
+        padding: 2px 9px;
+        margin: 0 2px;
+    }
+
+    .pagination > li:first-child > a,
+    .pagination > li:first-child > span, .pagination > li:last-child > a,
+    .pagination > li:last-child > span {
+        border-radius: 100%;
+    }
+
+    .pagination > li > a:hover,
+    .pagination > li > span:hover,
+    .pagination > li > a:focus,
+    .pagination > li > span:focus {
+        color: #5F5F5F;
+        background-color: #fff;
+        border-color: #BABABA;
+    }
+
+    .pagination > .active > a,
+    .pagination > .active > span,
+    .pagination > .active > a:hover,
+    .pagination > .active > span:hover,
+    .pagination > .active > a:focus,
+    .pagination > .active > span:focus {
+        background-color: #fff;
+        border-color: #F9A94E;
+        color: #F9A94E;
+        cursor: default;
+        z-index: 2;
+    }
+}
+
 p {
     font-size: 1.6rem;
 }
@@ -110,10 +187,11 @@ footer {
 }
 
 @media (max-width: 767px) {
-    h1{
+    h1 {
         font-size: 3.6rem;
         margin-bottom: 2rem;
     }
+
     footer {
         text-align: center;
     }
@@ -129,7 +207,7 @@ footer {
 
 .navbar-brand {
     height: auto;
-    padding: 15px 0 22px 0;
+    padding: 1.5rem 0 2.2rem 1.5rem;
 }
 
 .navbar-right {
@@ -143,7 +221,6 @@ footer {
 @media (max-width: 767px) {
     .navbar-header {
         float: left;
-        padding-left: 1rem;
         width: 45%;
     }
 
@@ -160,7 +237,6 @@ footer {
     #user-name {
         border-right-width: 0;
     }
-
 }
 
 @media (max-width: 320px) {
