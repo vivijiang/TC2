@@ -1,0 +1,44 @@
+
+/* override css for IE7 */
+
+/* for footer links above copyright */
+#footer ul
+{
+    display: inline;   
+}
+
+#footer ul li a
+{
+    border: 1px solid #fff5e7; 
+    display: block;	
+}
+
+#footer ul li a:hover 
+{
+    border-bottom: 1px solid #adabab;
+}
+
+/* for footer links and social icons */
+.footer-links .links .social ul
+{
+    width: 172px;
+}
+
+.footer-links .links .social ul li
+{
+    display: inline;
+    margin-right: 10px;	
+}
+
+.footer-links .links,
+.footer-links .links .social ul li a
+{
+    display: inline-block;
+}
+
+/* for thumb navigation active item */
+.thumb-nav .thumbs
+{
+    z-index: 100;
+}
+
